@@ -1,7 +1,6 @@
 package com.iszandro.library;
 
 import android.content.Context;
-import android.net.Uri;
 
 import java.util.ArrayList;
 
@@ -31,23 +30,12 @@ public class Library {
         Book sorcerersStone = new Book();
         sorcerersStone.setAuthor("H. K. Rowling");
         sorcerersStone.setTitle("Harry Potter and the Sorcerer's Stone");
-        String sorcerersStoneImgPath = Uri.parse("android.resource://" +
-                                                 mAppContext.getPackageName() + "/" +
-                                                 R.drawable.sorcerers_stone)
-                                          .toString();
-        Image sorcerersStoneImage = new Image(sorcerersStoneImgPath);
-        sorcerersStone.setImage(sorcerersStoneImage);
-
+        sorcerersStone.setCover(R.drawable.sorcerers_stone);
 
         Book deathlyHallows = new Book();
         deathlyHallows.setAuthor("J. K. Rowling");
         deathlyHallows.setTitle("Harry Potter and the Deathly Hallows");
-        String deathlyHallowsImgPath = Uri.parse("android.resource://" +
-                                                 mAppContext.getPackageName() + "/" +
-                                                 R.drawable.deathly_hallows)
-                                          .toString();
-        Image deathlyHallowsImage = new Image(deathlyHallowsImgPath);
-        deathlyHallows.setImage(deathlyHallowsImage);
+        deathlyHallows.setCover(R.drawable.deathly_hallows);
 
         mBooks.add(sorcerersStone);
         mBooks.add(deathlyHallows);

@@ -6,7 +6,7 @@ package com.iszandro.library;
 public class Book {
     private String mTitle;
     private String mAuthor;
-    private Image mImage;
+    private int mCover;
 
     public String getTitle() {
         return mTitle;
@@ -24,12 +24,12 @@ public class Book {
         mAuthor = author;
     }
 
-    public Image getImage() {
-        return mImage;
+    public int getCover() {
+        return mCover;
     }
 
-    public void setImage(Image image) {
-        mImage = image;
+    public void setCover(int cover) {
+        mCover = cover;
     }
 
     @Override
