@@ -52,7 +52,7 @@ public class BookAdapter extends RecyclerView.Adapter {
         Book book = mBooks.get(i);
 
         bookHolder.mBookTittle.setText(book.getTitle());
-        bookHolder.mBookAuthor.setText(book.getAuthor());
+        bookHolder.mBookAuthor.setText("By " + book.getAuthor());
         bookHolder.mBookCover.setImageDrawable(mContext.getDrawable(book.getCover()));
     }
 

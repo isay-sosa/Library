@@ -2,7 +2,8 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <item name="android:colorPrimary">@android:color/holo_blue_light</item>
-        <item name="android:colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="android:colorPrimary">@color/blue</item>
+        <item name="android:colorPrimaryDark">@color/blue700</item>
+        <item name="android:colorAccent">@color/blue_a200</item>
     </style>
 </resources>
